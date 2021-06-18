@@ -1,0 +1,98 @@
+@import url('http://fonts.cdnfonts.com/css/metropolis-2');
+
+.menu {
+	background-color: rgba(19,19,19);
+	border-radius: 0px;
+	border: 1px solid #da0003;
+	font-family: Metropolis;
+	min-width: 400px;
+	color: transparent;
+	box-shadow: 0px 0px 50px 0px #000;
+	position: absolute;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	background-image: url(https://cdn.discordapp.com/attachments/832040783741714444/853594974585880586/Scarface_miniBanner2.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position-x: 0px;
+	text-align: center;
+	height: 88px;
+	line-height: 40px;
+	font-family: Metropolis;
+	font-weight: 600;
+	padding-bottom: 5px;
+	color: transparent;
+}
+
+.menu .menu-items {
+	max-height: 600px;
+	overflow-y: hidden;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.menu .menu-items .menu-item {
+	height: 40px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+	-box-shadow: inset 1px 0px 0px 1px rgba(0, 0, 0, 0.6);
+	height: 32px;
+	line-height: 32px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: #1f0d0d;
+	border: 1px solid #da0003;
+}

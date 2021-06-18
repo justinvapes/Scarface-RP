@@ -1,0 +1,6 @@
+RegisterNetEvent("VehicleDespawner:notification")
+AddEventHandler("VehicleDespawner:notification", function(msg)
+    SetNotificationTextEntry('STRING')
+    AddTextComponentSubstringPlayerName(msg)
+    return DrawNotification(false, true)
+end)

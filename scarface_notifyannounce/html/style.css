@@ -1,0 +1,95 @@
+* {
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s; 
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #232323;
+}
+
+html,
+body {
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.notification {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s;
+  margin-bottom: 1vh;
+  position: relative;
+  top: 7vh;
+  left: 65vh;
+  max-width: 45vh;
+  min-height: 4.9vh;
+  word-wrap: break-word;
+  padding: 0.8vh;
+    background-color: rgba(0, 0, 0, 0.6);
+	/*background: #181918 !important;*/
+    border-radius: 35px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+    transition: all 0.3s ease-in-out;
+  background-image: url("https://cdn.discordapp.com/attachments/832040783741714444/854373184513900554/Warnzeichen_Kopie.png");
+
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.notification-title {
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s;
+  padding-left: 60px;
+  margin-top: 11px;
+  font-size: 1.7vh;
+  color: #fff;
+}
+
+p {
+  -webkit-animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-ms-animation: fadein 3s;
+	-o-animation: fadein 3s;
+	animation: fadein 3s;
+  color: #ffffff;
+}

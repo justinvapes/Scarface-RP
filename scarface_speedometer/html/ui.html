@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<title>by meerbi.design</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	.carStats {
+		-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		display: none;
+		position: absolute;
+		width: 378px;
+		height: 43px;
+		left: 771px;
+		top: 1007px;
+		overflow: visible;
+	}
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+	#scarface_17 {
+		opacity: 0.4;
+		fill: rgba(0,0,0,1);
+	}
+	.scarface_17 {
+		position: absolute;
+		overflow: visible;
+		width: 378px;
+		height: 43px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_29 {
+		position: absolute;
+		width: 70px;
+		height: 29px;
+		left: 161px;
+		top: 6px;
+		overflow: visible;
+	}
+	.speed {
+		left: 1px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		white-space: nowrap;
+		line-height: 24.999998092651367px;
+		margin-top: -2.083333969116211px;
+		text-align: center;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 20.833330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#KMH {
+		left: 43px;
+		top: 11px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		line-height: 12.500004768371582px;
+		margin-top: -1.0416674613952637px;
+		text-align: left;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10.416669845581055px;
+		color: rgba(255,255,255,1);
+	}
+	#Gruppe_33 {
+		position: absolute;
+		width: 147px;
+		height: 2px;
+		left: 123px;
+		top: 20px;
+		overflow: visible;
+	}
+	#scarface_19 {
+		fill: rgba(248,10,15,1);
+	}
+	.scarface_19 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 2px;
+		left: 0px;
+		top: 0px;
+	}
+	#scarface_19_n {
+		fill: rgba(248,10,15,1);
+	}
+	.scarface_19_n {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 2px;
+		left: 117px;
+		top: 0px;
+	}
+	#Gruppe_32 {
+		-webkit-animation: slit-in-vertical 1s ease-out both;
+	        animation: slit-in-vertical 1s ease-out both;
+		position: absolute;
+		width: 350px;
+		height: 30px;
+		left: 14px;
+		top: 6px;
+		overflow: visible;
+	}
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+
+	#Gruppe_31 {
+		position: absolute;
+		width: 98px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Gruppe_30 {
+		position: absolute;
+		width: 98px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_18 {
+		opacity: 0.302;
+		fill: rgba(0,0,0,1);
+	}
+	.scarface_18 {
+		position: absolute;
+		overflow: visible;
+		width: 90px;
+		height: 30px;
+		left: 8px;
+		top: 0px;
+	}
+	#Ellipse_2 {
+		fill: rgba(248,10,15,1);
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_29_t {
+		position: absolute;
+		width: 42px;
+		height: 20px;
+		left: 39px;
+		top: 5px;
+		overflow: visible;
+	}
+	#ID32 {
+		left: 0px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#LITER {
+		left: 23px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		white-space: nowrap;
+		line-height: 9.999996185302734px;
+		margin-top: -0.8333330154418945px;
+		text-align: left;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8.333330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#gas-pump-solid_3 {
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		left: 9px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Gruppe_31_x {
+		position: absolute;
+		width: 72px;
+		height: 30px;
+		left: 278px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_2_y {
+		fill: rgba(248,10,15,1);
+	}
+	.Ellipse_2_y {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 42px;
+		top: 0px;
+	}
+	#map-marker-alt-solid_1 {
+		position: absolute;
+		width: 14px;
+		height: 10px;
+		left: 50px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Gruppe_37 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_2_ {
+		fill: rgba(248,10,15,1);
+	}
+	.Ellipse_2_ {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#map-marker-alt-solid_1_ {
+		position: absolute;
+		width: 9px;
+		height: 12px;
+		left: 10px;
+		top: 9px;
+		overflow: visible;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div class="carStats">
+		<svg class="scarface_17">
+			<rect id="scarface_17" rx="21.5" ry="21.5" x="0" y="0" width="378" height="43">
+			</rect>
+		</svg>
+		<div id="Gruppe_29">
+				<svg class="circle" width="100" height="100">
+				<circle class="progress progress-speed" stroke="url(#gradient)" stroke-width="2.5" style="stroke-opacity: 1;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+			</svg>
+			<div class="text">
+				<span id="speed" class="speed"></span>
+			</div>
+			<div id="KMH">
+				<p>KM/H</p>
+			</div>
+		</div>
+		<div id="Gruppe_33">
+			<svg class="scarface_19">
+				<rect id="scarface_19" rx="1" ry="1" x="0" y="0" width="30" height="2">
+				</rect>
+			</svg>
+			<svg class="scarface_19_n">
+				<rect id="scarface_19_n" rx="1" ry="1" x="0" y="0" width="30" height="2">
+				</rect>
+			</svg>
+		</div>
+		<div id="Gruppe_32">
+			<div id="Gruppe_31">
+				<div id="Gruppe_30">
+					<svg class="scarface_18">
+						<rect id="scarface_18" rx="15" ry="15" x="0" y="0" width="90" height="30">
+						</rect>
+					</svg>
+					<svg class="Ellipse_2">
+						<ellipse id="Ellipse_2" rx="15" ry="15" cx="15" cy="15">
+						</ellipse>
+					</svg>
+					<div id="Gruppe_29_t">
+						<div id="ID32">
+							<p class="other" id="fueltext" class="fuel13"></p>
+						</div>
+						<div id="LITER">
+							<span>LITER</span>
+						</div>
+					</div>
+				</div>
+				<img id="gas-pump-solid_3" src="https://cdn.discordapp.com/attachments/788240573382787114/854349613507412008/gas-pump-solid_3.png">
+					
+			</div>
+			<div id="Gruppe_31_x">
+				<svg class="Ellipse_2_y">
+					<ellipse id="Ellipse_2_y" rx="15" ry="15" cx="15" cy="15">
+					</ellipse>
+				</svg>
+				<img id="map-marker-alt-solid_1" src="https://cdn.discordapp.com/attachments/788240573382787114/854354904712609802/off2_Kopie.png">
+					
+				<div id="Gruppe_37">
+					<svg class="Ellipse_2_">
+						<ellipse id="Ellipse_2_" rx="15" ry="15" cx="15" cy="15">
+						</ellipse>
+					</svg>
+					<img id="map-marker-alt-solid_1_" src="https://cdn.discordapp.com/attachments/788240573382787114/854355526821478420/unlocked_Kopie.png">
+						
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

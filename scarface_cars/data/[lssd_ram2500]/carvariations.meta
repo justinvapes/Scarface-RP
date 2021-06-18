@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--DIBZER Modifications 15/06/20 | 2019 RAM 2500 | https://dibzermods.com/discord -->
+<CVehicleModelInfoVariation>
+  <variationData>
+  <!-- CHROME VERSION-->
+    <Item>
+      <modelName>ram2500</modelName> 
+      <colors>
+        <Item>
+          <indices content="char_array">
+            134
+            134
+            156
+            156
+          </indices>
+          <liveries>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>0_default_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges/>
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Police guv plate</Name>
+            <Value value="100"/>
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="1"/>
+      <sirenSettings value="555512345"/>
+    </Item>
+	
+	<!-- BLACK/ALLOY VERSION-->
+	<Item>
+      <modelName>ram2500_b</modelName> 
+      <colors>
+        <Item>
+          <indices content="char_array">
+            134
+            134
+            156
+            156
+          </indices>
+          <liveries>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>0_default_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges/>
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Police guv plate</Name>
+            <Value value="100"/>
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="1"/>
+      <sirenSettings value="555512345"/>
+    </Item>
+	
+	<!-- ALL BLACKED OUT VERSION-->
+	<Item>
+      <modelName>ram2500_ab</modelName> 
+      <colors>
+        <Item>
+          <indices content="char_array">
+            134
+            134
+            156
+            156
+          </indices>
+          <liveries>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+            <Item value="false"/>
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>0_default_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges/>
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Police guv plate</Name>
+            <Value value="100"/>
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="1"/>
+      <sirenSettings value="555512345"/>
+    </Item>
+  </variationData>
+</CVehicleModelInfoVariation>

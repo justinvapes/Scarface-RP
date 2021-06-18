@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>by meerbi.design</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#hud {
+		-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		position: absolute;
+		width: 336px;
+		height: 45px;
+		left: 1563px;
+		top: 67px;
+		overflow: visible;
+	}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+	#scarface_17 {
+		opacity: 0.4;
+		fill: rgba(0,0,0,1);
+	}
+	.scarface_17 {
+		position: absolute;
+		overflow: visible;
+		width: 336px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gruppe_32 {
+		position: absolute;
+		width: 296.396px;
+		height: 31px;
+		left: 19.604px;
+		top: 7px;
+		overflow: visible;
+	}
+	#Gruppe_31 {
+		position: absolute;
+		width: 117px;
+		height: 30px;
+		left: 179.396px;
+		top: 1px;
+		overflow: visible;
+	}
+	#scarface_18 {
+		opacity: 0.302;
+		fill: rgba(0,0,0,1);
+	}
+	.scarface_18 {
+		position: absolute;
+		overflow: visible;
+		width: 109px;
+		height: 30px;
+		left: 8px;
+		top: 0px;
+	}
+	.voicemuted {
+		position: absolute;
+		width: 59px;
+		height: 3px;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+	}
+	.voice1 {
+		position: absolute;
+		width: 59px;
+		height: 3px;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+	}
+	.voice2 {
+		position: absolute;
+		width: 59px;
+		height: 3px;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+	}
+	.voice3 {
+		position: absolute;
+		width: 59px;
+		height: 3px;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+	}
+	.voice4 {
+		position: absolute;
+		width: 59px;
+		height: 3px;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+	}
+	#Gruppe_34 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ellipse_2 {
+		fill: rgba(248,10,15,1);
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#microphone-solid_2 {
+		position: absolute;
+		width: 11px;
+		height: 16px;
+		left: 9px;
+		top: 7px;
+		overflow: visible;
+	}
+	#funk {
+		fill: rgba(248,10,15,1);
+	}
+	.funk {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 142.396px;
+		top: 0px;
+	}
+	#funke {
+		fill: rgba(48,48,48,1);
+	}
+	.funke {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 142.396px;
+		top: 0px;
+	}
+	#funk2 {
+		position: absolute;
+		width: 15px;
+		height: 12px;
+		left: 150.396px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Logo {
+		position: absolute;
+		width: 16.792px;
+		height: 27.814px;
+		left: 0px;
+		top: 1.093px;
+		overflow: visible;
+	}
+	#content {
+		left: 37px;
+		top: 8px;
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: center;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div id="hud">
+		<svg class="scarface_17">
+			<rect id="scarface_17" rx="21.5" ry="21.5" x="0" y="0" width="336" height="45">
+			</rect>
+		</svg>
+		<div id="Gruppe_32">
+			<div id="Gruppe_31">
+				<svg class="scarface_18">
+					<rect id="scarface_18" rx="15" ry="15" x="0" y="0" width="109" height="30">
+					</rect>
+				</svg>
+				<img class="voicemuted" src="https://cdn.discordapp.com/attachments/788240573382787114/854443282846842890/muted.png" id="voicee">
+				<img class="voice1" src="https://cdn.discordapp.com/attachments/788240573382787114/854443285116354590/2.png" id="voicee">
+				<img class="voice2" src="https://cdn.discordapp.com/attachments/788240573382787114/854443286810591242/3.png" id="voicee">
+				<img class="voice3" src="https://cdn.discordapp.com/attachments/788240573382787114/854443288462491648/4.png" id="voicee">
+					
+				<div id="Gruppe_34">
+					<svg class="Ellipse_2">
+						<ellipse id="Ellipse_2" rx="15" ry="15" cx="15" cy="15">
+						</ellipse>
+					</svg>
+					<img id="microphone-solid_2" src="https://cdn.discordapp.com/attachments/788240573382787114/854434745089654830/microphone-solid_2.png">
+						
+				</div>
+			</div>
+			<svg class="funk">
+				<ellipse id="funk" rx="15" ry="15" cx="15" cy="15">
+				</ellipse>
+			</svg>
+			<svg class="funke">
+				<ellipse id="funke" rx="15" ry="15" cx="15" cy="15">
+				</ellipse>
+			</svg>
+			<img id="funk2" src="https://cdn.discordapp.com/attachments/788240573382787114/854434807042801684/funk.png">
+				
+			<img id="Logo" src="https://cdn.discordapp.com/attachments/788240573382787114/854434653889101864/Logo.png">
+				
+			<div class="money">
+				<div id="content">0$</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

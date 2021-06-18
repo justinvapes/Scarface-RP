@@ -1,0 +1,90 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: none;
+    position: absolute;
+    margin: auto;
+    width: 620px;
+    height: 650px;
+    background-color: white;
+    border-radius: 17px;
+    top: 350px;
+    left: 64%;
+}
+
+.head-line1 {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #ff0000;
+    border-radius: 15px 15px 0px 0px;
+}
+
+p {
+    position: relative;
+    font-size: 18px;
+    left: 30px;
+}
+
+.head-line2 {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ff0000;
+}
+
+.content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 545px;
+    top: 35px;
+}
+
+.content-elem {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: 80px;
+    padding: 10px;
+    margin-left: -13px;
+    margin-top: -13px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: rgb(209, 207, 207);
+    border-radius: 16px;
+}
+
+.content-elem i {
+    color: #ff0000;
+    position: relative;
+    font-size: 35px;
+    line-height: 75px;
+    display: inline-block;
+    left: 15px;
+}
+
+.span {
+    color: #ff0000;
+}
+
+.content-elem p {
+    position: relative;
+    left: 40px;
+    color: black;
+    font-size: 17px;
+    bottom: 35px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  }

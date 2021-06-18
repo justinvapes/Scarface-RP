@@ -1,0 +1,121 @@
+Locales['en'] = {
+  -- Cloakroom
+  ['cloakroom'] = 'Garderobe',
+  ['citizen_wear'] = 'Zivil Kleidung',
+  ['barman_outfit'] = 'Barkeeper Kleidung',
+  ['dancer_outfit_1'] = 'Tanz Outfit 1',
+  ['dancer_outfit_2'] = 'Tanz Outfit 2',
+  ['dancer_outfit_3'] = 'Tanz Outfit 3',
+  ['dancer_outfit_4'] = 'Tanz Outfit 4',
+  ['dancer_outfit_5'] = 'Tanz Outfit 5',
+  ['dancer_outfit_6'] = 'Tanz Outfit 6',
+  ['dancer_outfit_7'] = 'Tanz Outfit 7',
+  ['no_outfit'] = 'Es gibt keine Uniform, die zu dir passt...',
+  ['open_cloackroom'] = 'Drück ~INPUT_CONTEXT~ um dich umzuzuiehen',
+  
+  -- Vault  
+  ['get_weapon'] = 'Waffe nehmen',
+  ['put_weapon'] = 'Waffe setzen',
+  ['get_weapon_menu'] = 'Safe - Waffe einlagern',
+  ['put_weapon_menu'] = 'Safe - Waffe auslagern',
+  ['get_object'] = '',
+  ['put_object'] = 'Objekt setzen',
+  ['vault'] = 'safe',
+  ['open_vault'] = 'Drücke ~INPUT_CONTEXT~ to access the safe',
+
+  -- Fridge  
+  ['get_object'] = 'Objekt nehmen',
+  ['put_object'] = 'Objekt setzen',
+  ['fridge'] = 'Kühlhschrank',
+  ['open_fridge'] = 'Drücke ~INPUT_CONTEXT~ um zum Kühlschrank zu gelangen',
+  ['bahamas_fridge_stock'] = 'Kühlschrank des Vanille-Einhorns',
+  ['fridge_inventory'] = 'Inhalt des Kühlschranks',
+
+  -- Shops  
+  ['shop'] = 'Vanilla bahamas Shop',
+  ['shop_menu'] = 'Drücke ~INPUT_CONTEXT~ um zum Shop zu gelangen.',
+  ['bought'] = 'Du hast gekauft : ~b~ 1x',
+  ['not_enough_money'] = 'Du hast nicht genug Geld.',
+  ['max_item'] = 'Du trägst schon genug bei dir.',
+  
+  -- Vehicles  
+  ['vehicle_menu'] = 'Auto',
+  ['vehicle_out'] = 'Draußen steht schon ein Fahrzeug',
+  ['vehicle_spawner'] = 'Drücke ~INPUT_CONTEXT~ um das Fahrzeug zu verlassen',
+  ['store_vehicle'] = 'Drücke ~INPUT_CONTEXT~ um das Fharzeug einzuparklen',
+  ['service_max'] = 'Rundumservice: ',
+  ['spawn_point_busy'] = 'Ein Fahrzeug befindet sich in der Nähe des Ausstiegspunkts',
+  
+  -- Boss Menu  
+  ['take_company_money'] = 'Geldfirma entfernen',
+  ['deposit_money'] = 'Geld einzahlen',
+  ['amount_of_withdrawal'] = 'Auszahlungsbetrag',
+  ['invalid_amount'] = 'ungültige Menge',
+  ['amount_of_deposit'] = 'Einzahlungsbetrag',
+  ['open_bossmenu'] = 'Drücke ~INPUT_CONTEXT~ um das Menü zu öffnen',
+  ['invalid_quantity'] = 'ungültige Menge',
+  ['you_removed'] = 'Du hast x entfernt',
+  ['you_added'] = 'Du hast x hinzugefügt',
+  ['quantity'] = 'Menge',
+  ['inventory'] = 'Inventar',
+  ['bahamas_stock'] = 'Vorrat an Vanille Einhorn',
+  
+  -- Billing Menu  
+  ['billing'] = 'Rechnung',
+  ['no_players_nearby'] = 'Kein Spieler in der nähe',
+  ['billing_amount'] = 'Rechnungsbetrag',
+  ['amount_invalid'] = 'ungültige Menge',
+  
+  -- Crafting Menu  
+  ['crafting'] = 'Mixologie',
+  ['martini'] = 'weißer Martini',
+  ['icetea'] = 'Eis Tee',
+  ['drpepper'] = 'DR. Pepper',
+  ['saucisson'] = 'Würstchen',
+  ['grapperaisin'] = 'ein paar Trauben',
+  ['energy'] = 'Energy Drink',
+  ['jager'] = 'Jägermeister',
+  ['limonade'] = 'Limo',
+  ['vodka'] = 'Vodka',
+  ['ice'] = 'Eis',
+  ['soda'] = 'Soda',
+  ['whisky'] = 'Whisky',
+  ['rhum'] = 'Rum',
+  ['tequila'] = 'Tequila',
+  ['menthe'] = 'Minze',
+  ['jusfruit'] = 'Fruchtsaft',
+  ['jagerbomb'] = 'Jägerbombe',
+  ['bolcacahuetes'] = 'Erdnüsse',
+  ['bolnoixcajou'] = 'Cashewnüsse',
+  ['bolpistache'] = 'Pistazien',
+  ['bolchips'] = 'Chips',
+  ['golem'] = 'Golem',
+  ['whiskycoca'] = 'Whisky-Cola',
+  ['vodkaenergy'] = 'Vodka-Energy',
+  ['vodkafruit'] = 'Vodka-Fruchtsaft',
+  ['rhumfruit'] = 'rRum-Fruchsaft',
+  ['teqpaf'] = 'Teq\'paf',
+  ['rhumcoca'] = 'Rum-Cola',
+  ['mojito'] = 'Mojito',
+  ['mixapero'] = 'Aperitif-Mix',
+  ['metreshooter'] = 'Shooter Meter',
+  ['jagercerbere'] = 'Jäger Cerberus',
+  ['assembling_cocktail'] = 'Mischung aus verschiedenen Zutaten in Arbeit!',
+  ['craft_miss'] = 'unglückliches Versagen der Mischung ...',
+  ['not_enough'] = 'nicht genug ~r~ ',
+  ['craft'] = 'vollständige Vermischung von ~g~',
+  
+  -- Misc  
+  ['map_blip'] = 'Bahamas',
+  ['bahamas'] = 'Bahmas',
+  
+  -- Phone  
+  ['bahamas_phone'] = 'bahamas',
+  ['bahamas_customer'] = 'Citizen',
+  
+  -- Teleporters
+  ['e_to_enter_1'] = 'Drücke ~INPUT_PICKUP~ um hinter die Bar zu gehen.',
+  ['e_to_exit_1'] = 'Drücke ~INPUT_PICKUP~um vor der Bar zu gehen.',
+  ['e_to_enter_2'] = 'Drücke ~INPUT_PICKUP~ um aufs Dach zu gehen.',
+  ['e_to_exit_2'] = 'Drücke ~INPUT_PICKUP~ um in die Büros zu gehen.',
+}

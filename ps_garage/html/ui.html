@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="ui.js"></script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>by meerbi.design</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	.container {
+		-webkit-animation: slit-in-vertical 0.45s ease-out both;
+	        animation: slit-in-vertical 0.45s ease-out both;
+		display: none;
+		position: absolute;
+		width: 1054px;
+		height: 573px;
+		left: 433px;
+		top: 254px;
+		overflow: visible;
+	}
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+
+	#Gruppe_1 {
+		position: absolute;
+		width: 1054px;
+		height: 573px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#rechts {
+		position: absolute;
+		width: 1054px;
+		height: 573px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg {
+		position: absolute;
+		width: 1054px;
+		height: 573px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.close {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 17.99px;
+		top: 501px;
+		overflow: visible;
+	}
+	#scarface_4 {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_4 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#x_1 {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		left: 10.01px;
+		top: 11px;
+		overflow: visible;
+	}
+	#Gruppe_15 {
+		position: absolute;
+		width: 30px;
+		height: 75px;
+		left: 18px;
+		top: 249px;
+		overflow: visible;
+	}
+	#btn-2 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 45px;
+		overflow: visible;
+	}
+	#scarface_4_p {
+		fill: rgba(33,33,33,1);
+	}
+	#scarface_4_p:hover {
+		fill: #f80a0f;
+	}
+	.scarface_4_p {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#arrow-right-circle {
+		pointer-events: none;
+		z-index: 0;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 6px;
+		top: 7px;
+		overflow: visible;
+	}
+	#btn-1 {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_4_s {
+		fill: rgba(33,33,33,1);
+	}
+	#scarface_4_s:hover {
+		fill: #f80a0f;
+	}
+	.scarface_4_s {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#arrow-right-circle_t {
+		pointer-events: none;
+		z-index: 0;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 6px;
+		top: 7px;
+		overflow: visible;
+	}
+	#Logo {
+		position: absolute;
+		width: 16px;
+		height: 28px;
+		left: 28px;
+		top: 37px;
+		overflow: visible;
+	}
+	#Gruppe_12 {
+		position: absolute;
+		width: 88.578px;
+		height: 57px;
+		left: 115px;
+		top: 28px;
+		overflow: visible;
+	}
+	#Garage_Scarface {
+		left: 15.578px;
+		top: 9.059px;
+		position: absolute;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		line-height: 24.999998092651367px;
+		margin-top: -2.083333969116211px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20.833330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#scarface_6 {
+		fill: rgba(248,10,15,1);
+	}
+	.scarface_6 {
+		position: absolute;
+		overflow: visible;
+		width: 2px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	.one-bar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10.417vw;
+    height: 2.604vw;  
+    position: relative;
+    top: 1.563vw;
+    border-radius: 2.604vw;
+	left: 1.667vw;
+
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.604vw;
+    font-size: 1.302vw;
+    border-radius: 0.208vw;
+    padding-bottom: 0.313vw;
+    border: none;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.head-buttons {
+    position: relative;
+    width: 20.833vw;
+    height: 2.604vw;  
+    text-align: center;
+    font-size: 1.042vw;
+    top: 7.813vw;
+}
+
+
+
+.garage-vehicles {
+    display: block;
+    position: relative;
+    width: 800px;
+    height: 380px;
+    bottom: -100px;
+    left: 165px;
+    overflow: auto;
+}
+
+.garage-vehicles list {
+    padding: 0; /* remove default padding and all margins! */
+    margin: 0;
+    list-style-type: none; /* remove the • */
+}
+
+.garage-vehicles vehicle-list {
+    width: 7.813vw;
+    height: 5.208vw;
+    background-color: red;
+    float: left;
+}
+
+.vehicle {
+    padding: 0; /* remove default padding and all margins! */
+    margin: 0;
+    list-style-type: none; /* remove the • */
+    width: 250px;
+    height: 100px;
+	float: left;
+	padding-bottom: 0.625vw;
+}
+
+.vehicle-inner {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    background-color: rgb(33, 33, 33);
+    border-radius: 1.042vw;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    top: 5%;
+    border-radius: 0.208vw;
+    padding-bottom: 0.313vw;
+    border: none;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.garage-vehicles::-webkit-scrollbar {
+    width: 0.521vw;
+    height: 0.781vw;
+}
+
+.garage-vehicles::-webkit-scrollbar-track {
+    border-radius: 0.521vw;
+    background-color: transparent;
+}
+
+.garage-vehicles::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 1.042vw;
+}
+
+.inner-icon {
+    position: relative;
+    width: 50px;
+    top: 20%;
+    left: 10%;
+}
+
+.inner-label-knz {
+    position: absolute;
+    top: 27px;
+    left: 50px;
+    width: 89%;
+    text-align: center;
+    color: white;
+    font-weight: 750;
+	font-size: 12px;
+    letter-spacing: 0.052vw;
+}
+
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div class="container noselect">
+		<div id="Gruppe_1">
+			<div id="rechts">
+				<img id="bg" src="https://cdn.discordapp.com/attachments/788240573382787114/854741522678939698/bg.png">
+				<div class="content">
+                <div id="vehicle-list" class="garage-vehicles">
+                    <!-- Fahrzeuge -->
+                </div>
+        </div>
+					
+				<div class="close">
+					<svg class="scarface_4">
+						<rect id="scarface_4" rx="5" ry="5" x="0" y="0" width="30" height="30">
+						</rect>
+					</svg>
+					<img id="x_1" src="https://cdn.discordapp.com/attachments/788240573382787114/854741572172251188/x_1.png">
+						
+				</div>
+				<div id="Gruppe_15">
+
+					<div id="btn-2" class="head-switch-out">
+						<svg class="scarface_4_p">
+							<rect id="scarface_4_p" rx="5" ry="5" x="0" y="0" width="30" height="30">
+							</rect>
+							<img id="arrow-right-circle" src="https://cdn.discordapp.com/attachments/788240573382787114/854741668417634334/arrow-right-circle.png">
+						</svg>
+					</div>
+
+					<div id="btn-1" class="head-switch-in selected">>
+						<svg class="scarface_4_s">
+							<rect id="scarface_4_s" rx="5" ry="5" x="0" y="0" width="30" height="30">
+							</rect>
+							<img id="arrow-right-circle_t" src="https://cdn.discordapp.com/attachments/788240573382787114/854741618775425044/arrow-right-circle_t.png">
+						</svg>
+					</div>
+
+				</div>
+				<img id="Logo" src="https://cdn.discordapp.com/attachments/788240573382787114/854741453255475210/Logo.png">
+					
+			</div>
+			<div id="Gruppe_12">
+				<div id="Garage_Scarface">
+					<span>Garage</span><br><span style="font-size:12.5px;color:rgba(161,161,161,1);">Scarface</span>
+				</div>
+				<svg class="scarface_6">
+					<rect id="scarface_6" rx="1" ry="1" x="0" y="0" width="2" height="57">
+					</rect>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
